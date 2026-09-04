@@ -47,7 +47,7 @@ def build_package(repo_root: Path, output: Path) -> Path:
     for relative, expected in ARTIFACTS:
         path = model_root / relative
         if not path.is_file():
-            raise FileNotFoundError(f"Required Yang artifact is missing: {path}")
+            raise FileNotFoundError(f"Required Yang Song workflow artifact is missing: {path}")
         actual = _sha256(path)
         if actual != expected:
             raise ValueError(
@@ -57,7 +57,9 @@ def build_package(repo_root: Path, output: Path) -> Path:
 
     output.parent.mkdir(parents=True, exist_ok=True)
     readme = (
-        "NPEC Labeling Tool Yang model pack 2026.8.2.2\n\n"
+        "NPEC Labeling Tool Yang Song model pack 2026.8.2.3\n\n"
+        "Provenance: Yang Song, DroughtFighters project, Plant Microbe "
+        "Interaction group, Utrecht University.\n\n"
         "These are the exact visible-root, inoculated-shoot, and five-seedling "
         "ownership artifacts documented in docs/YANG_PIPELINE.md.\n\n"
         "The artifacts are released under Apache-2.0 by the named rights "
@@ -95,7 +97,9 @@ def build_package(repo_root: Path, output: Path) -> Path:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Build the checksum-verified Yang model release archive."
+        description=(
+            "Build the checksum-verified Yang Song workflow model release archive."
+        )
     )
     parser.add_argument(
         "--repo-root",
@@ -105,7 +109,7 @@ def main() -> int:
     parser.add_argument(
         "--output",
         type=Path,
-        default=Path("dist/NPEC-Yang-model-pack-2026.8.2.2.zip"),
+        default=Path("dist/NPEC-Yang-Song-model-pack-2026.8.2.3.zip"),
     )
     parser.add_argument(
         "--confirm-redistribution-rights",

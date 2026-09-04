@@ -612,7 +612,10 @@ def run_experiment(
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Leakage-safe Yang five-seedling owner-assignment feasibility experiment."
+        description=(
+            "Leakage-safe Yang Song five-seedling owner-assignment feasibility "
+            "experiment."
+        )
     )
     parser.add_argument("--corpus", type=Path, default=DEFAULT_CORPUS)
     parser.add_argument("--max-pixels-per-owner", type=int, default=350)

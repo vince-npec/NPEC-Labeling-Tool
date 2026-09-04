@@ -61,6 +61,13 @@ def main() -> None:
             "seed_channel_qualified": False,
         },
         "training_corpus": "external:yang-ground-truth-feb-2026",
+        "provenance": {
+            "person": "Yang Song",
+            "project": "DroughtFighters",
+            "group": "Plant Microbe Interaction",
+            "institution": "Utrecht University",
+            "legacy_identifier": "yang",
+        },
         "gap_policy": (
             "Handwritten bacterial gaps remain background/unknown. This shoot-only model does not "
             "perform root-gap repair."

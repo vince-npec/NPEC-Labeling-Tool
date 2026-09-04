@@ -507,7 +507,14 @@ def run_challenge(
         for key in numeric_keys
     }
     report = {
-        "title": "Yang five-plate held-out hybrid ownership challenge",
+        "title": "Yang Song five-plate held-out hybrid ownership challenge",
+        "provenance": {
+            "person": "Yang Song",
+            "project": "DroughtFighters",
+            "group": "Plant Microbe Interaction",
+            "institution": "Utrecht University",
+            "legacy_identifier": "yang",
+        },
         "corpus": str(corpus),
         "output_dir": str(output_dir),
         "selection_seed": int(seed),
@@ -550,7 +557,11 @@ def run_challenge(
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Run a reproducible five-plate Yang hybrid ownership challenge.")
+    parser = argparse.ArgumentParser(
+        description=(
+            "Run a reproducible five-plate Yang Song hybrid ownership challenge."
+        )
+    )
     parser.add_argument("--corpus", type=Path, default=DEFAULT_CORPUS)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--count", type=int, default=5)

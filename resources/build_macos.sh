@@ -11,7 +11,7 @@ BUILD_DIR="${NPEC_BUILD_DIR:-${SCRIPT_DIR}/build}"
 PYTHON_BIN="${NPEC_BUILD_PYTHON:-}"
 APP_NAME="NPEC Labeling Tool"
 BUNDLE_ID="${NPEC_BUNDLE_ID:-nl.npec.labelingtool}"
-APP_VERSION="${NPEC_APP_VERSION:-2026.8.2.2}"
+APP_VERSION="${NPEC_APP_VERSION:-2026.8.2.3}"
 MIN_MACOS_VERSION="${NPEC_MIN_MACOS_VERSION:-14.0}"
 BUNDLE_FFMPEG="${NPEC_BUNDLE_FFMPEG:-0}"
 MODEL_PROFILE="${NPEC_MODEL_PROFILE:-none}"
@@ -135,12 +135,12 @@ if [[ "${MODEL_PROFILE}" == "yang" ]]; then
     relative_path="${model_spec#*|}"
     model_path="${SCRIPT_DIR}/builtin_models/${relative_path}"
     if [[ ! -f "${model_path}" ]]; then
-      echo "Yang model profile is missing: ${model_path}"
+      echo "Yang Song workflow model profile is missing: ${model_path}"
       exit 1
     fi
     actual_sha256="$(shasum -a 256 "${model_path}" | awk '{print $1}')"
     if [[ "${actual_sha256}" != "${expected_sha256}" ]]; then
-      echo "Yang model checksum mismatch: ${relative_path}"
+      echo "Yang Song workflow model checksum mismatch: ${relative_path}"
       echo "Expected: ${expected_sha256}"
       echo "Actual:   ${actual_sha256}"
       exit 1

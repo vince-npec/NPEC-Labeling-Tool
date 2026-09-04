@@ -2,10 +2,14 @@
 
 ## Snapshot origin
 
-Release `2026.8.2.2` was assembled on 2026-09-04 from the active NPEC Labeling
-Tool development working copy. That working copy did not contain prior Git
-metadata, so this repository begins with a curated source snapshot rather than
-an imported historical commit graph.
+Release `2026.8.2.3` is a provenance-only correction to the first public source
+snapshot, `2026.8.2.2`. It adds Yang Song's full person, project, group, and
+institutional attribution without changing algorithms, model weights,
+measurement formulas, or validation results.
+
+The `2026.8.2.2` working copy did not contain prior Git metadata, so this
+repository begins with a curated source snapshot rather than an imported
+historical commit graph.
 
 The release was assembled with an explicit allowlist. Experimental images,
 `.oclp` projects, annotation corpora, generated outputs, paper drafts, local
@@ -14,7 +18,7 @@ were excluded.
 
 ## Scientific record
 
-The exact Yang production workflow is documented in `docs/YANG_PIPELINE.md`.
+The exact Yang Song production workflow is documented in `docs/YANG_PIPELINE.md`.
 Its tracked record includes:
 
 - the production preset and class mapping;
@@ -27,6 +31,11 @@ Its tracked record includes:
 Private source images and hand annotations are not distributed. Vinicius Lube
 authorized publication of the exact Yang Song checkpoints, owner-ranker, and
 sample-level validation records on 2026-09-04.
+
+The workflow and corpus provenance is Yang Song, DroughtFighters project, Plant
+Microbe Interaction group, Utrecht University. Historical `yang` identifiers in
+paths, filenames, corpus IDs, and command-line profiles are stable compatibility
+tokens that refer to this full attribution.
 
 The bundled PyPhenotyper compatibility layer was reconciled against the public
 BSD-3-Clause NPEC lineage at `NPEC-NL/pyphenotyper` commit
@@ -54,5 +63,5 @@ and not notarized until a Developer ID Application certificate is supplied.
 
 The public checkout is intentionally capable of annotation, review, analytics,
 and external-model use without bundled checkpoints. The authorized Yang Song
-model pack and model-bearing installer are built from the tagged source with
-checksum enforcement.
+workflow model pack and model-bearing installer are built from the tagged
+source with checksum enforcement.

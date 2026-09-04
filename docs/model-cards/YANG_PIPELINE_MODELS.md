@@ -1,10 +1,15 @@
-# Yang Pipeline Model Card
+# Yang Song Pipeline Model Card
 
 ## Scope
 
 This card covers the three artifacts selected by the production preset
 `Arabidopsis - Lucifer RGB inoculated hybrid (5 seedlings)` in release
-`2026.8.2.2`.
+`2026.8.2.3`.
+
+The dataset and workflow provenance is Yang Song, DroughtFighters project,
+Plant Microbe Interaction group, Utrecht University. Stable `yang` identifiers
+in artifact filenames, paths, and profile keys refer to Yang Song and remain
+unchanged for checksum-level reproducibility.
 
 ## Visible-root checkpoint
 

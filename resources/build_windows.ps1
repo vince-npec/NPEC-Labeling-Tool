@@ -2,7 +2,7 @@
 param(
     [string]$PythonVersion = "3.11",
     [switch]$OneFile,
-    [string]$AppVersion = "2026.8.2.2",
+    [string]$AppVersion = "2026.8.2.3",
     [ValidateSet("none", "yang", "all")]
     [string]$ModelProfile = "none",
     [switch]$SkipTensorFlowCollection
@@ -280,11 +280,11 @@ if ($ModelProfile -eq "none") {
     foreach ($modelSpec in $yangModelSpecs) {
         $modelPath = Join-Path $builtinModelRoot $modelSpec.Relative
         if (-not (Test-Path -LiteralPath $modelPath -PathType Leaf)) {
-            throw "Yang model profile is missing: $modelPath"
+            throw "Yang Song workflow model profile is missing: $modelPath"
         }
         $actualSha256 = (Get-FileHash -LiteralPath $modelPath -Algorithm SHA256).Hash.ToLowerInvariant()
         if ($actualSha256 -ne $modelSpec.Sha256) {
-            throw "Yang model checksum mismatch for '$($modelSpec.Relative)'. Expected $($modelSpec.Sha256), got $actualSha256."
+            throw "Yang Song workflow model checksum mismatch for '$($modelSpec.Relative)'. Expected $($modelSpec.Sha256), got $actualSha256."
         }
         $modelFamily = ($modelSpec.Relative -split "[\\/]")[0]
         $destination = "resources\builtin_models\$modelFamily"

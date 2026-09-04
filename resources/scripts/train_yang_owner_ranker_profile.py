@@ -63,7 +63,7 @@ def train_profile(
         if VALID_SAMPLE_RE.match(sample.sample_id)
     ]
     if not samples:
-        raise RuntimeError("No valid numbered Yang annotation samples were found.")
+        raise RuntimeError("No valid numbered Yang Song annotation samples were found.")
 
     feature_batches: list[np.ndarray] = []
     owner_batches: list[np.ndarray] = []
@@ -96,6 +96,13 @@ def train_profile(
 
     profile: dict[str, object] = {
         "profile_version": "yang-rgb-five-seedling-owner-v1",
+        "provenance": {
+            "person": "Yang Song",
+            "project": "DroughtFighters",
+            "group": "Plant Microbe Interaction",
+            "institution": "Utrecht University",
+            "legacy_identifier": "yang",
+        },
         "model_type": "shared_owner_linear_ranker",
         "feature_set": FEATURE_SET,
         "ranker": ranker.to_payload(),
@@ -139,7 +146,7 @@ def train_profile(
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="Train the final Yang five-seedling owner ranker profile."
+        description="Train the final Yang Song five-seedling owner ranker profile."
     )
     parser.add_argument("--corpus", type=Path, default=DEFAULT_CORPUS)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)

@@ -3,13 +3,18 @@
 No raw research images, `.oclp` projects, private masks, or paper drafts are
 distributed in this repository.
 
-## Yang Arabidopsis corpus
+## Yang Song Arabidopsis corpus
 
 The five-seedling owner ranker and inoculated RGB shoot work used a private
-February 2026 Yang Song annotation corpus. Vinicius Lube authorized publication
-of the derived checkpoints, fitted coefficients, split identifiers, and
-sample-level validation measurements on 2026-09-04. The source images and hand
-labels remain private and are not distributed by this release.
+February 2026 annotation corpus associated with Yang Song of the DroughtFighters
+project, Plant Microbe Interaction group, Utrecht University. Vinicius Lube
+authorized publication of the derived checkpoints, fitted coefficients, split
+identifiers, and sample-level validation measurements on 2026-09-04. The source
+images and hand labels remain private and are not distributed by this release.
+
+The stable corpus ID `external:yang-ground-truth-feb-2026` and related `yang`
+filenames predate this public release. They are retained for reproducibility and
+refer to Yang Song and the project affiliation recorded above.
 
 ## Public root datasets referenced by the experimental starter
 

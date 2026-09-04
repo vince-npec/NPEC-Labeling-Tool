@@ -1,6 +1,13 @@
 {
-  "title": "Yang five-plate seedling-ownership diagnostic retrial",
+  "title": "Yang Song five-plate seedling-ownership diagnostic retrial",
   "corpus": "external:yang-ground-truth-feb-2026",
+  "provenance": {
+    "person": "Yang Song",
+    "project": "DroughtFighters",
+    "group": "Plant Microbe Interaction",
+    "institution": "Utrecht University",
+    "legacy_identifier": "yang"
+  },
   "output_dir": "docs/validation/yang_2026-07-23",
   "selection": {
     "seed": 20260723,

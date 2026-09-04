@@ -1,6 +1,6 @@
 # Building the macOS Application
 
-Release `2026.8.2.2` targets Apple Silicon and requires macOS 14 or newer. The
+Release `2026.8.2.3` targets Apple Silicon and requires macOS 14 or newer. The
 minimum is recorded in the bundle as `LSMinimumSystemVersion`.
 
 ## Public release build
@@ -27,13 +27,15 @@ from `NPEC_FFMPEG_EXE`, `PATH`, `/opt/homebrew/bin/ffmpeg`, or
 `/usr/local/bin/ffmpeg`.
 
 `NPEC_MODEL_PROFILE` accepts `none`, `yang`, or `all` and defaults to `none`.
-The `yang` profile contains the cleared publication artifacts and
-checksum-verifies every file listed in the Yang model card. `all` is intended
+The legacy `yang` identifier denotes the Yang Song workflow for the
+DroughtFighters project, Plant Microbe Interaction group, Utrecht University.
+That profile contains the cleared publication artifacts and checksum-verifies
+every file listed in the Yang Song model card. `all` is intended
 for controlled internal builds because the other model families require
 separate provenance review.
 
 The build installs the exact tested environment from
-`environments/macos-arm64-2026.8.2.2.txt`. Override `NPEC_REQUIREMENTS_FILE`
+`environments/macos-arm64-2026.8.2.3.txt`. Override `NPEC_REQUIREMENTS_FILE`
 only when intentionally qualifying a different dependency set.
 
 ## Internal GPL-aware build

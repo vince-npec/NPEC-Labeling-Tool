@@ -6,8 +6,14 @@ grayscale images, Lucifer RGB images, dark-background RGB experiments, and
 single-plant potato endpoint images.
 
 This repository is the publication reproducibility snapshot for release
-`2026.8.2.2`, including the five-seedling Lucifer RGB pipeline used for the
-Yang Arabidopsis analyses.
+`2026.8.2.3`, including the five-seedling Lucifer RGB pipeline used for the
+Yang Song Arabidopsis analyses in the DroughtFighters project, Plant Microbe
+Interaction group, Utrecht University.
+
+The historical technical token `yang` in filenames, paths, profile keys, and
+commands refers to Yang Song. Those identifiers remain unchanged for backward
+compatibility and checksum-level reproducibility; human-facing provenance uses
+her full name and project affiliation.
 
 ## Main capabilities
 
@@ -30,11 +36,11 @@ an inferred, quality-gated measurement. Ambiguous crossings can be marked
 invalid, and invalid per-seedling aggregates can be `NaN` while the conserved
 plate total remains available.
 
-Bacterial occlusion is treated as unknown visibility. The default Yang profile
-does not invent hidden root pixels. Optional gap-repair outputs must be reported
-separately with their own provenance.
+Bacterial occlusion is treated as unknown visibility. The default Yang Song
+workflow profile does not invent hidden root pixels. Optional gap-repair outputs
+must be reported separately with their own provenance.
 
-See [the Yang pipeline record](docs/YANG_PIPELINE.md) for the exact presets,
+See [the Yang Song pipeline record](docs/YANG_PIPELINE.md) for the exact presets,
 model hashes, validation design, limitations, and reproduction commands.
 The source-snapshot and verification record is in
 [docs/RELEASE_PROVENANCE.md](docs/RELEASE_PROVENANCE.md).
@@ -60,7 +66,7 @@ not bundle the GPL-enabled development binary. Install FFmpeg separately (for
 example, `brew install ffmpeg`) or set `NPEC_FFMPEG_EXE=/path/to/ffmpeg` before
 starting the app.
 
-## Yang Lucifer RGB recipe
+## Yang Song Lucifer RGB recipe
 
 1. Open **Segmentation Pipeline**.
 2. Select the PyPhenotyper backend.
@@ -88,9 +94,9 @@ The normal combined run writes, among other files:
 ## Model artifacts
 
 Checkpoint binaries are intentionally kept out of normal Git history. The exact
-Yang Song production artifacts have been cleared for redistribution and are
-published as a checksum-verified release asset and in the corresponding macOS
-installer. The repository records all expected filenames and hashes in
+Yang Song workflow production artifacts have been cleared for redistribution
+and are published as a checksum-verified release asset and in the corresponding
+macOS installer. The repository records all expected filenames and hashes in
 [docs/MODEL_SHA256SUMS](docs/MODEL_SHA256SUMS) and scientific scope in
 [docs/MODELS.md](docs/MODELS.md). Other models may be supplied externally through
 the application model selectors.
@@ -110,7 +116,7 @@ Public-release macOS builds use a no-FFmpeg OpenCV wheel; follow
 [`docs/BUILD_MACOS.md`](docs/BUILD_MACOS.md) rather than distributing a wheel
 that silently carries GPL video libraries.
 
-The `2026.8.2.2` macOS installer is an Apple Silicon build for macOS 14 or
+The `2026.8.2.3` macOS installer is an Apple Silicon build for macOS 14 or
 newer.
 
 Windows builds must run on Windows:
@@ -121,12 +127,12 @@ Windows builds must run on Windows:
 
 Both platform builders default to `none` for bundled model checkpoints. Pass
 `NPEC_MODEL_PROFILE=yang` on macOS or `-ModelProfile yang` on Windows to build
-the authorized Yang Song release profile. Both builders verify all publication
-artifact hashes before packaging.
+the authorized Yang Song workflow release profile. Both builders verify all
+publication artifact hashes before packaging.
 
-Installers must be built from a tagged commit. Release `2026.8.2.2` uses the
+Installers must be built from a tagged commit. Release `2026.8.2.3` uses the
 frozen macOS ARM64 environment in
-[environments/macos-arm64-2026.8.2.2.txt](environments/macos-arm64-2026.8.2.2.txt).
+[environments/macos-arm64-2026.8.2.3.txt](environments/macos-arm64-2026.8.2.3.txt).
 
 ## Test
 

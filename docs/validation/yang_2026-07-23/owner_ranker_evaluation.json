@@ -1,4 +1,11 @@
 {
+  "provenance": {
+    "person": "Yang Song",
+    "project": "DroughtFighters",
+    "group": "Plant Microbe Interaction",
+    "institution": "Utrecht University",
+    "legacy_identifier": "yang"
+  },
   "feature_set": "crown_coordinates_orientation",
   "ranker": {
     "model_type": "shared_owner_linear_ranker",

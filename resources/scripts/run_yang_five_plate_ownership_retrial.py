@@ -782,7 +782,14 @@ def run_retrial(
         row for row in threshold_rows if float(row["threshold"]) == float(threshold)
     )
     report = {
-        "title": "Yang five-plate seedling-ownership diagnostic retrial",
+        "title": "Yang Song five-plate seedling-ownership diagnostic retrial",
+        "provenance": {
+            "person": "Yang Song",
+            "project": "DroughtFighters",
+            "group": "Plant Microbe Interaction",
+            "institution": "Utrecht University",
+            "legacy_identifier": "yang",
+        },
         "corpus": str(corpus),
         "output_dir": str(output_dir),
         "selection": {
@@ -858,7 +865,7 @@ def run_retrial(
     (output_dir / "RESULTS.md").write_text(
         "\n".join(
             [
-                "# Yang Five-Plate Seedling-Ownership Retrial",
+                "# Yang Song Five-Plate Seedling-Ownership Retrial",
                 "",
                 f"- Challenge samples: {', '.join(sample.sample_id for sample in challenge)}",
                 f"- Selected owner margin threshold: {threshold:.2f}",
@@ -893,7 +900,7 @@ def run_retrial(
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Leakage-aware five-plate Yang ownership diagnostic retrial."
+        description="Leakage-aware five-plate Yang Song ownership diagnostic retrial."
     )
     parser.add_argument("--corpus", type=Path, default=DEFAULT_CORPUS)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT)

@@ -127,7 +127,7 @@ def summarize(output_dir: Path, baseline_master: Path) -> tuple[Path, Path]:
 
     markdown_path = output_dir / "VALIDATION_REPORT.md"
     lines = [
-        "# NPEC Yang Per-Seedling Reanalysis Validation",
+        "# NPEC Yang Song Per-Seedling Reanalysis Validation",
         "",
         f"- Pipeline: `{run_report.get('pipeline_version', '')}`",
         f"- Frames: {int(run_report.get('frames', len(timelapse)))}",

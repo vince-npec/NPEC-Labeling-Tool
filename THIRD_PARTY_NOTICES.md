@@ -57,13 +57,14 @@ Francisco Ribeiro Mansilha, Wesley van Gaalen, Borislav Nachev, Vlad Matache,
 Valerian Meline, and Danna Shao. Detailed contribution statements are recorded
 in the upstream repository's `PROVENANCE.md`.
 
-The exact Yang root and shoot checkpoints documented by this repository do not
-match the already-public PyPhenotyper model files. Their release therefore
-remains subject to the separate clearance described in `docs/MODELS.md`.
+The exact Yang Song workflow root and shoot checkpoints documented by this
+repository do not match the already-public PyPhenotyper model files. Their
+release therefore remains subject to the separate clearance described in
+`docs/MODELS.md`.
 
 ## Complete environment
 
 The exact package inventory used for the macOS ARM64 release candidate is in
-`environments/macos-arm64-2026.8.2.2.txt`.
+`environments/macos-arm64-2026.8.2.3.txt`.
 Its reproducible CycloneDX 1.6 software bill of materials is in
-`docs/sbom/macos-arm64-2026.8.2.2.cdx.json`.
+`docs/sbom/macos-arm64-2026.8.2.3.cdx.json`.

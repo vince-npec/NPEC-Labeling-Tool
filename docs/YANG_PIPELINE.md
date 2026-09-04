@@ -1,8 +1,15 @@
-# Yang Lucifer RGB Five-Seedling Pipeline
+# Yang Song Lucifer RGB Five-Seedling Pipeline
+
+## Person and project provenance
+
+This dataset-specific workflow is associated with Yang Song of the
+DroughtFighters project, Plant Microbe Interaction group, Utrecht University.
+The historical technical token `yang` in script names, paths, corpus IDs, and
+profile keys is retained for compatibility and refers to Yang Song throughout.
 
 ## Release identity
 
-- Application release: `2026.8.2.2`
+- Application release: `2026.8.2.3`
 - Production interface: Lazy Folder in the Segmentation Pipeline tab
 - Preset: `Arabidopsis - Lucifer RGB inoculated hybrid (5 seedlings)`
 - Existing-mask ownership pipeline: `existing-mask-ownership-v20-visual-temporal-shoot-memory-schema-9`
@@ -18,9 +25,9 @@ Scripts named `run_yang_*` are evaluation tools and are not invoked by the GUI.
    Filenames, timestamps, folder structure, OCR, and QR/barcode evidence can be
    reviewed before the app writes `npec_plate_identity_manifest.csv`.
 2. **Stabilization.** Frames are grouped by plate and sorted chronologically.
-   The recommended Yang setting is previous-frame registration against the
-   plant/top-root region. Registration uses phase correlation with ORB/RANSAC
-   fallback and conservative transform limits.
+   The recommended Yang Song workflow setting is previous-frame registration
+   against the plant/top-root region. Registration uses phase correlation with
+   ORB/RANSAC fallback and conservative transform limits.
 3. **Semantic inference.** RGB is normalized to `[0,1]` and processed in
    overlapping 256-pixel tiles. The hybrid preset uses the Lucifer RGB root
    checkpoint and the inoculated RGB shoot checkpoint listed below.
@@ -33,8 +40,8 @@ Scripts named `run_yang_*` are evaluation tools and are not invoked by the GUI.
    branches become lateral roots. This step operates on visible root pixels.
 6. **Temporal ownership.** Five stable left-to-right crowns define persistent
    lanes. Assignment combines crown connectivity, lane geometry, previous tips,
-   previous owner masks, temporal continuity, and the Yang shared linear ranker
-   as a constrained tie-breaker for graph ambiguities.
+   previous owner masks, temporal continuity, and the Yang Song workflow shared
+   linear ranker as a constrained tie-breaker for graph ambiguities.
 7. **Measurement.** Root length uses weighted 8-neighbor skeleton edges. Shoot
    area uses squared pixel scale. Strict RGB crown-green masks may replace the
    model class for reported shoot measurements and video overlays.
@@ -46,7 +53,7 @@ The per-frame primary/lateral decomposition call is static. Temporal continuity
 is applied later during ownership and reporting, not during raw class-1/class-3
 decomposition.
 
-## Models used for Yang
+## Models used for the Yang Song workflow
 
 | Component | Release path | Original SHA-256 |
 |---|---|---|
@@ -91,7 +98,8 @@ all 58 annotations.
 - Lateral-root pixels inherit the owner of the connected root system.
 - The ranker cannot override an unambiguous temporal assignment.
 - Bacterial gaps remain unknown/background in the visible-label benchmark.
-- GAN gap repair is optional and was not part of the default Yang profile.
+- GAN gap repair is optional and was not part of the default Yang Song workflow
+  profile.
 - Plate-total measurements are conserved independently of ownership.
 
 ## Existing-mask reproduction
@@ -116,8 +124,10 @@ This command does not perform raw RGB semantic inference.
 
 ## Suggested Methods language
 
-Images were processed with NPEC Labeling Tool release `2026.8.2.2` using the
-Lucifer RGB inoculated Arabidopsis five-seedling preset. Frames were grouped by
+The dataset-specific workflow was developed for Yang Song of the DroughtFighters
+project, Plant Microbe Interaction group, Utrecht University. Images were
+processed with NPEC Labeling Tool release `2026.8.2.3` using the Lucifer RGB
+inoculated Arabidopsis five-seedling preset. Frames were grouped by
 plate and registered sequentially using the plant/top-root region. Visible root
 pixels were segmented by tiled RGB inference and decomposed into primary and
 lateral classes by crown-anchored skeleton topology. Per-seedling allocation

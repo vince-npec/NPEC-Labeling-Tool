@@ -1,5 +1,12 @@
 {
   "name": "rgb_inoculated_root_union_v3",
+  "provenance": {
+    "person": "Yang Song",
+    "project": "DroughtFighters",
+    "group": "Plant Microbe Interaction",
+    "institution": "Utrecht University",
+    "legacy_identifier": "yang"
+  },
   "mode": "multiclass",
   "input_mode": "rgb",
   "flip_horizontal": false,

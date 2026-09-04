@@ -17253,7 +17253,7 @@ class NpecLabelingMainWindow(QMainWindow):
         )
         if callable(owner_profile_applier) and bool(owner_profile_applier(cfg)):
             warnings.append(
-                "Five-seedling root ownership uses the bundled Yang-trained "
+                "Five-seedling root ownership uses the bundled Yang Song workflow "
                 "confidence-preserving graph tie-breaker."
             )
 
