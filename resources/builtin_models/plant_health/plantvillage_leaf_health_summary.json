@@ -1,0 +1,37 @@
+{
+  "dataset_root": "external:PlantVillage-Dataset/raw/segmented",
+  "variant": "segmented",
+  "counts": {
+    "healthy": 15084,
+    "stressed": 39222
+  },
+  "train_count": 46160,
+  "val_count": 8146,
+  "epochs": 3,
+  "device": "mps",
+  "best_val_accuracy": 0.9867419592438006,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.10275117139004339,
+      "val_loss": 0.046106589058989865,
+      "val_accuracy": 0.9829364105082249,
+      "val_f1_stressed": 0.9881348698250108
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.057072563156924584,
+      "val_loss": 0.03671750068225985,
+      "val_accuracy": 0.9866191996071692,
+      "val_f1_stressed": 0.9907305042945829
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.04642370127188284,
+      "val_loss": 0.03720304104512095,
+      "val_accuracy": 0.9867419592438006,
+      "val_f1_stressed": 0.9907786885245902
+    }
+  ],
+  "model_path": "resources/builtin_models/plant_health/plantvillage_leaf_health_binary_mobilenet_v1.pt"
+}

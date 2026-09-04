@@ -1,0 +1,3 @@
+# Optional PyTorch features: general root starter and plant-health inference.
+torch>=2.2
+torchvision>=0.17

@@ -1,0 +1,134 @@
+{
+  "validation_kind": "strict_four_plate_holdout_v3_topology_audit",
+  "holdout_stems": [
+    "2024_07_15_10_02_40_0013",
+    "2024_07_15_10_07_41_0021",
+    "2024_07_15_10_21_15_0085",
+    "2024_07_15_10_32_21_0192"
+  ],
+  "root_threshold": 0.6,
+  "root_graph_threshold": 0.8,
+  "aggregate": {
+    "total_root": {
+      "dice": 0.806952638264019,
+      "precision": 0.8497398713694646,
+      "recall": 0.7682677955680989,
+      "tp": 207430,
+      "fp": 36680,
+      "fn": 62567
+    },
+    "primary_root": {
+      "dice": 0.8188209176122349,
+      "precision": 0.8503673342421387,
+      "recall": 0.7895313575087282,
+      "tp": 92946,
+      "fp": 16355,
+      "fn": 24777
+    },
+    "lateral_root": {
+      "dice": 0.4674085344841297,
+      "precision": 0.8341596336524997,
+      "recall": 0.32466470757197463,
+      "tp": 44082,
+      "fp": 8764,
+      "fn": 91695
+    },
+    "adventitious_root": {
+      "dice": 0.2864341313256083,
+      "precision": 0.1782389614826202,
+      "recall": 0.7288829017612134,
+      "tp": 14609,
+      "fp": 67354,
+      "fn": 5434
+    },
+    "shoot": {
+      "dice": 0.8885029231837339,
+      "precision": 0.9046703257470093,
+      "recall": 0.8729032317330835,
+      "tp": 190045,
+      "fp": 20026,
+      "fn": 27671
+    }
+  },
+  "per_image": [
+    {
+      "sample_stem": "2024_07_15_10_02_40_0013",
+      "total_root_dice": 0.7840059313042478,
+      "total_root_precision": 0.7320688955466167,
+      "total_root_recall": 0.8438751221123021,
+      "primary_root_dice": 0.7499924560185883,
+      "primary_root_precision": 0.7420433510479489,
+      "primary_root_recall": 0.7581137140068326,
+      "lateral_root_dice": 0.2100170192073912,
+      "lateral_root_precision": 0.6643593293339486,
+      "lateral_root_recall": 0.1247220537699616,
+      "adventitious_root_dice": 0.15674897035849783,
+      "adventitious_root_precision": 0.0882285766490042,
+      "adventitious_root_recall": 0.7017257039055405,
+      "shoot_dice": 0.8154476881193978,
+      "shoot_precision": 0.8259258451947599,
+      "shoot_recall": 0.8052320639238354
+    },
+    {
+      "sample_stem": "2024_07_15_10_07_41_0021",
+      "total_root_dice": 0.7978289784185009,
+      "total_root_precision": 0.896187768085209,
+      "total_root_recall": 0.7189251884786391,
+      "primary_root_dice": 0.7938967695792108,
+      "primary_root_precision": 0.8699059561128527,
+      "primary_root_recall": 0.7301030475772857,
+      "lateral_root_dice": 0.4085279187817259,
+      "lateral_root_precision": 0.7496274217585693,
+      "lateral_root_recall": 0.2807703042143455,
+      "adventitious_root_dice": 0.27721550234509995,
+      "adventitious_root_precision": 0.21435388432907043,
+      "adventitious_root_recall": 0.39224589591337755,
+      "shoot_dice": 0.7215572434087565,
+      "shoot_precision": 0.898979389615537,
+      "shoot_recall": 0.6026237130521421
+    },
+    {
+      "sample_stem": "2024_07_15_10_21_15_0085",
+      "total_root_dice": 0.7892171917645491,
+      "total_root_precision": 0.9046081908633218,
+      "total_root_recall": 0.6999342186407926,
+      "primary_root_dice": 0.8518094693176942,
+      "primary_root_precision": 0.9030937215650592,
+      "primary_root_recall": 0.806036816459123,
+      "lateral_root_dice": 0.5249517855117039,
+      "lateral_root_precision": 0.8622360248447205,
+      "lateral_root_recall": 0.37734447202942933,
+      "adventitious_root_dice": 0.44550229809586345,
+      "adventitious_root_precision": 0.298915138498816,
+      "adventitious_root_recall": 0.8742148494121437,
+      "shoot_dice": 0.9362611836479432,
+      "shoot_precision": 0.9250334165594815,
+      "shoot_recall": 0.947764857881137
+    },
+    {
+      "sample_stem": "2024_07_15_10_32_21_0192",
+      "total_root_dice": 0.8580569678761266,
+      "total_root_precision": 0.9238293703248682,
+      "total_root_recall": 0.8010274942355147,
+      "primary_root_dice": 0.8627206139883354,
+      "primary_root_precision": 0.903486109782158,
+      "primary_root_recall": 0.8254749970859074,
+      "lateral_root_dice": 0.5964971433923387,
+      "lateral_root_precision": 0.8763278111068303,
+      "lateral_root_recall": 0.4521240345297592,
+      "adventitious_root_dice": 0.414382377636193,
+      "adventitious_root_precision": 0.28381029700290916,
+      "adventitious_root_recall": 0.7674716428832784,
+      "shoot_dice": 0.9487400084468708,
+      "shoot_precision": 0.9373184150336898,
+      "shoot_recall": 0.9604433887569279
+    }
+  ],
+  "pipeline_version": "dario-potato-endpoint-v3",
+  "topology_cleanup_audit": {
+    "trigger_rule": "more than 120 root tips or route gap greater than max(300 px, 15% of route length)",
+    "holdout_plates_triggered": 0,
+    "holdout_pixels_removed": 0,
+    "validation_counts_changed": false
+  }
+}

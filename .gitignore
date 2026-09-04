@@ -1,0 +1,53 @@
+# Python and test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments
+.venv/
+venv/
+.oc-desktop-venv/
+.npec-analysis-venv/
+resources/.build-venv*/
+
+# Build products
+resources/build*/
+resources/dist*/
+resources/.pyinstaller-cache/
+resources/NPEC Labeling Tool.spec
+/dist/
+/dist-opencv/
+/release/
+*.whl
+*.app/
+*.dmg
+*.exe
+*.msi
+*.zip
+
+# Local data and generated analyses
+/data/
+/outputs/
+/output/
+resources/output/
+resources/templates/
+resources/bin/npec_plate_ocr
+*.oclp
+*.psd
+
+# Model binaries are distributed only after provenance/license clearance.
+resources/builtin_models/**/*.h5
+resources/builtin_models/**/*.hdf5
+resources/builtin_models/**/*.keras
+resources/builtin_models/**/*.pt
+resources/builtin_models/**/*.tflite
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/

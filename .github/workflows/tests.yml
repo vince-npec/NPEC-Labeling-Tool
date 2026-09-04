@@ -1,0 +1,25 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      QT_QPA_PLATFORM: offscreen
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          grep -vE '^(tensorflow|tensorflow-macos|tflite-runtime|pyinstaller)' resources/requirements.txt > /tmp/npec-ci-requirements.txt
+          pip install -r /tmp/npec-ci-requirements.txt pytest
+      - name: Test
+        run: pytest -q

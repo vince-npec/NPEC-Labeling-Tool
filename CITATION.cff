@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, cite the tagged release used for analysis."
+title: "NPEC Labeling Tool"
+type: software
+authors:
+  - family-names: "Lube"
+    given-names: "Vinicius"
+    affiliation: "Utrecht University / Netherlands Plant Eco-phenotyping Centre (NPEC)"
+version: "2026.8.2.2"
+date-released: 2026-09-04
+license: "Apache-2.0"
+repository-code: "https://github.com/vince-npec/NPEC-Labeling-Tool"
+url: "https://github.com/vince-npec/NPEC-Labeling-Tool/releases/tag/v2026.8.2.2"
+abstract: >-
+  Desktop annotation, segmentation, time-series tracking, and phenotyping
+  software for Hades and Lucifer plant imaging datasets, including a validated
+  five-seedling Arabidopsis ownership workflow.
+keywords:
+  - plant phenotyping
+  - root segmentation
+  - Arabidopsis
+  - time series
+  - computer vision

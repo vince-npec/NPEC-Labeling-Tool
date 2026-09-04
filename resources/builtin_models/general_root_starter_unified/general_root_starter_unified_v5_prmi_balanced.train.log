@@ -1,0 +1,187 @@
+{
+  "corpus_dir": "external:general-root-starter-full-push-v4-prmi",
+  "output_path": "resources/builtin_models/general_root_starter_unified/general_root_starter_unified_v5_prmi_balanced.pt",
+  "device": "mps",
+  "families": [
+    "arabidopsis_dark_rgb",
+    "minirhizotron_public",
+    "plate_bw_hades",
+    "plate_rgb_lucifer",
+    "potato_rgb"
+  ],
+  "tasks": [
+    "root_binary",
+    "shoot",
+    "primary_root",
+    "lateral_root",
+    "seed_crown"
+  ],
+  "best": {
+    "epoch": 6,
+    "selection_score": 0.08173827148672241,
+    "val_root_iou": 0.11488787161680075,
+    "val_shoot_iou": 0.0043892045165396425
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "curriculum_stage": "plate_core",
+      "train_loss": 1.48702026497234,
+      "val_root_iou": 0.01268188082690529,
+      "val_shoot_iou": 0.011286905339723567,
+      "val_selection_score": 0.012263388180750772
+    },
+    {
+      "epoch": 2,
+      "curriculum_stage": "all_domain_core",
+      "train_loss": 0.7623622644701996,
+      "val_root_iou": 0.06048140254689784,
+      "val_shoot_iou": 0.0012181550635313265,
+      "val_selection_score": 0.04270242830188788
+    },
+    {
+      "epoch": 3,
+      "curriculum_stage": "all_domain_core",
+      "train_loss": 0.6068087500351215,
+      "val_root_iou": 0.06291047210274858,
+      "val_shoot_iou": 0.00026360453961053965,
+      "val_selection_score": 0.04411641183380717
+    },
+    {
+      "epoch": 4,
+      "curriculum_stage": "all_domain_aux_warmup",
+      "train_loss": 0.7588102174557142,
+      "val_root_iou": 0.07134025263744005,
+      "val_shoot_iou": 0.0006420355659550237,
+      "val_selection_score": 0.05013078751599454
+    },
+    {
+      "epoch": 5,
+      "curriculum_stage": "all_domain_aux_warmup",
+      "train_loss": 0.7000118259934953,
+      "val_root_iou": 0.08905119341449878,
+      "val_shoot_iou": 9.362414613223879e-07,
+      "val_selection_score": 0.06233611626258754
+    },
+    {
+      "epoch": 6,
+      "curriculum_stage": "all_domain_full",
+      "train_loss": 1.0795963057935387,
+      "val_root_iou": 0.11488787161680075,
+      "val_shoot_iou": 0.0043892045165396425,
+      "val_selection_score": 0.08173827148672241
+    }
+  ],
+  "stopped_early": false,
+  "weight_decay": 0.0001,
+  "family_loss_weight": 0.05,
+  "task_loss_weights": {
+    "root_binary": 1.0,
+    "shoot": 0.8,
+    "primary_root": 0.6,
+    "lateral_root": 0.6,
+    "seed_crown": 0.4
+  },
+  "early_stopping_patience": 3,
+  "early_stopping_min_delta": 0.0001,
+  "curriculum_mode": "auto",
+  "curriculum_stages": [
+    {
+      "name": "plate_core",
+      "epochs": 1,
+      "families": [
+        "arabidopsis_dark_rgb",
+        "plate_bw_hades",
+        "plate_rgb_lucifer",
+        "potato_rgb"
+      ],
+      "focus_tasks": [
+        "root_binary",
+        "shoot"
+      ],
+      "positive_crop_bias": 0.98,
+      "repeat_factor": 1,
+      "task_loss_weights": {
+        "root_binary": 1.0,
+        "shoot": 0.9,
+        "primary_root": 0.0,
+        "lateral_root": 0.0,
+        "seed_crown": 0.0
+      }
+    },
+    {
+      "name": "all_domain_core",
+      "epochs": 2,
+      "families": [
+        "arabidopsis_dark_rgb",
+        "minirhizotron_public",
+        "plate_bw_hades",
+        "plate_rgb_lucifer",
+        "potato_rgb"
+      ],
+      "focus_tasks": [
+        "root_binary",
+        "shoot"
+      ],
+      "positive_crop_bias": 0.98,
+      "repeat_factor": 1,
+      "task_loss_weights": {
+        "root_binary": 1.0,
+        "shoot": 0.9,
+        "primary_root": 0.0,
+        "lateral_root": 0.0,
+        "seed_crown": 0.0
+      }
+    },
+    {
+      "name": "all_domain_aux_warmup",
+      "epochs": 2,
+      "families": [
+        "arabidopsis_dark_rgb",
+        "minirhizotron_public",
+        "plate_bw_hades",
+        "plate_rgb_lucifer",
+        "potato_rgb"
+      ],
+      "focus_tasks": [
+        "root_binary",
+        "shoot"
+      ],
+      "positive_crop_bias": 0.98,
+      "repeat_factor": 1,
+      "task_loss_weights": {
+        "root_binary": 1.0,
+        "shoot": 0.9,
+        "primary_root": 0.18,
+        "lateral_root": 0.18,
+        "seed_crown": 0.08
+      }
+    },
+    {
+      "name": "all_domain_full",
+      "epochs": 1,
+      "families": [
+        "arabidopsis_dark_rgb",
+        "minirhizotron_public",
+        "plate_bw_hades",
+        "plate_rgb_lucifer",
+        "potato_rgb"
+      ],
+      "focus_tasks": [
+        "root_binary",
+        "shoot"
+      ],
+      "positive_crop_bias": 0.98,
+      "repeat_factor": 1,
+      "task_loss_weights": {
+        "root_binary": 1.0,
+        "shoot": 0.8,
+        "primary_root": 0.6,
+        "lateral_root": 0.6,
+        "seed_crown": 0.4
+      }
+    }
+  ],
+  "early_stopping_start_epoch": 6,
+  "positive_crop_bias": 0.98
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "key": "shoot",
+    "required": false,
+    "synonyms": ["shoot", "leaf", "rosette", "hypocotyl", "stem"]
+  },
+  {
+    "key": "primary_root",
+    "required": false,
+    "synonyms": ["primary root", "main root", "tap root", "taproot", "primary"]
+  },
+  {
+    "key": "lateral_root",
+    "required": false,
+    "synonyms": ["lateral root", "lateral", "branch root", "secondary root", "side root"]
+  },
+  {
+    "key": "root_binary",
+    "required": true,
+    "synonyms": ["root", "roots", "root system", "binary root", "foreground root"]
+  },
+  {
+    "key": "seed_crown",
+    "required": false,
+    "synonyms": ["seed", "crown", "crown/seed", "seed frame", "seedling center"]
+  }
+]

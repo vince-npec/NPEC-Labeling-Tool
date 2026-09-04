@@ -1,0 +1,42 @@
+[
+  {
+    "key": "rootnav2",
+    "name": "RootNav 2.0",
+    "type": "codebase",
+    "status": "candidate",
+    "source_url": "https://github.com/robail-yasrab/RootNav-2.0",
+    "license": "BSD-3-Clause",
+    "license_source": "Repository LICENSE on GitHub (checked 2026-03-20)",
+    "notes": "Maintained 2D root analysis and training codebase. Treat as a reference implementation and potential source of compatible public-root data after verifying dataset-level licenses."
+  },
+  {
+    "key": "rootpainter_minirhizotron_demo",
+    "name": "RootPainter minirhizotron demo",
+    "type": "dataset",
+    "status": "ingested",
+    "source_url": "https://zenodo.org/records/6992696",
+    "license": "cc-by-4.0",
+    "license_source": "Zenodo record metadata",
+    "notes": "100 annotated minirhizotron images plus full-resolution binary segmentations. Ingested locally as the first public-root / minirhizotron family for the unified General Root Starter."
+  },
+  {
+    "key": "prmi_dataset",
+    "name": "PRMI Dataset of Minirhizotron Images",
+    "type": "dataset",
+    "status": "ingested",
+    "source_url": "https://datadryad.org/dataset/doi:10.5061/dryad.2v6wwpzp4",
+    "license": "cc0-1.0",
+    "license_source": "Dryad record metadata",
+    "notes": "Large public minirhizotron dataset with official train/val/test splits and binary root masks. Integrated locally as direct root_binary supervision in the minirhizotron_public family."
+  },
+  {
+    "key": "plantcv_dataset_catalog",
+    "name": "PlantCV public dataset catalog",
+    "type": "catalog",
+    "status": "candidate",
+    "source_url": "https://plantcv.readthedocs.io/",
+    "license": "BSD-3-Clause",
+    "license_source": "PlantCV repository LICENSE",
+    "notes": "Toolkit plus linked public phenotyping datasets. Use as a discovery source; verify per-dataset licenses before bundling weights."
+  }
+]
