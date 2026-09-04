@@ -300,8 +300,9 @@ FOUNDATION_PROMPT_CLASSES: list[LabelClass] = [
 ]
 APP_TITLE = "NPEC Labeling Tool"
 APP_ABOUT_TEXT = (
-    "Designed and created by Vinicius Lube. Extensive application testing and feedback by "
-    "Jason van Hamond. February 2026, Utrecht University."
+    "Designed and created by Vinicius Lube at Utrecht University. Extensive application "
+    "testing and feedback by Jason van Hamond. Pipeline and model optimization support by "
+    "Francisco Ribeiro Mansilha (BUas). February 2026."
 )
 
 
@@ -3781,7 +3782,8 @@ class NpecLabelingMainWindow(QMainWindow):
         py_grid.addLayout(lucifer_gan_row, 11, 1, 1, 3)
 
         self.pyphenotyper_lucifer_gan_gap_repair_label = QLabel(
-            "Optional postprocess for Lucifer RGB images. Point this at Francisco's precomputed inference_output folder."
+            "Optional postprocess for Lucifer RGB images. Select the compatible precomputed "
+            "inference_output folder from the Francisco Ribeiro Mansilha (BUas) workflow."
         )
         self.pyphenotyper_lucifer_gan_gap_repair_label.setWordWrap(True)
         self.pyphenotyper_lucifer_gan_gap_repair_label.setStyleSheet("color: #9eb2d8;")

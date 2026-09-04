@@ -12,6 +12,11 @@ authorized publication of the derived checkpoints, fitted coefficients, split
 identifiers, and sample-level validation measurements on 2026-09-04. The source
 images and hand labels remain private and are not distributed by this release.
 
+Images were acquired with a Canon EOS R5 camera fitted with a 50 mm EF lens at
+f/5.6, ISO 100, and 1/20 s exposure. Native `.cr3` files were converted to PNG
+before NPEC Labeling Tool post-processing. The RAW-conversion software and any
+conversion-specific color settings are not asserted by this repository.
+
 The stable corpus ID `external:yang-ground-truth-feb-2026` and related `yang`
 filenames predate this public release. They are retained for reproducibility and
 refer to Yang Song and the project affiliation recorded above.

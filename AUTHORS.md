@@ -24,9 +24,14 @@ private source images and hand annotations.
   workflows, helping improve application reliability, usability, and release
   readiness.
 
-This acknowledgement recognizes testing and feedback contributions. It does
-not imply authorship or ownership of research datasets, model artifacts, or
-scientific results.
+## Pipeline and model optimization
+
+- Francisco Ribeiro Mansilha, BUas - assistance optimizing the computer-vision
+  pipeline and model workflows.
+
+These acknowledgements recognize testing, feedback, and optimization
+contributions. They do not imply authorship or ownership of research datasets,
+model artifacts, or scientific results.
 
 Additional contributors should be added through Git history and acknowledged
 here when their contribution is released.

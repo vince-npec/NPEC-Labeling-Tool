@@ -2,13 +2,16 @@
 
 ## Snapshot origin
 
-Release `2026.8.2.4` is an acknowledgement-only correction to provenance release
-`2026.8.2.3`. It records Jason van Hamond's extensive application testing and
-feedback, and corrects his full name in the application and user guide. Release
-`2026.8.2.3` added Yang Song's full person, project, group, and institutional
-attribution to the first public source snapshot, `2026.8.2.2`. Neither
-correction changes algorithms, model weights, measurement formulas, validation
-results, or scientific interpretation.
+Release `2026.8.2.5` is a documentation and provenance correction to release
+`2026.8.2.4`. It records the supplied Canon EOS R5 acquisition settings and
+`.cr3`-to-PNG preprocessing for the Yang Song workflow, and acknowledges
+Francisco Ribeiro Mansilha (BUas) for help optimizing the computer-vision
+pipeline and model workflows. Release `2026.8.2.4` records Jason van Hamond's
+extensive application testing and feedback, while release `2026.8.2.3` added
+Yang Song's full person, project, group, and institutional attribution to the
+first public source snapshot, `2026.8.2.2`. These corrections do not change
+algorithms, model weights, measurement formulas, validation results, or
+scientific interpretation.
 
 The `2026.8.2.2` working copy did not contain prior Git metadata, so this
 repository begins with a curated source snapshot rather than an imported
@@ -44,6 +47,10 @@ Jason van Hamond contributed extensive application testing and feedback that
 helped improve reliability, usability, and release readiness. This testing
 acknowledgement does not imply authorship or ownership of research datasets,
 model artifacts, or scientific results.
+
+Francisco Ribeiro Mansilha (BUas) helped optimize the computer-vision pipeline
+and model workflows. This technical acknowledgement likewise does not imply
+ownership of the Yang Song research dataset or released model artifacts.
 
 The bundled PyPhenotyper compatibility layer was reconciled against the public
 BSD-3-Clause NPEC lineage at `NPEC-NL/pyphenotyper` commit

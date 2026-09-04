@@ -9,7 +9,7 @@ profile keys is retained for compatibility and refers to Yang Song throughout.
 
 ## Release identity
 
-- Application release: `2026.8.2.4`
+- Application release: `2026.8.2.5`
 - Production interface: Lazy Folder in the Segmentation Pipeline tab
 - Preset: `Arabidopsis - Lucifer RGB inoculated hybrid (5 seedlings)`
 - Existing-mask ownership pipeline: `existing-mask-ownership-v20-visual-temporal-shoot-memory-schema-9`
@@ -18,6 +18,13 @@ profile keys is retained for compatibility and refers to Yang Song throughout.
 
 The Lazy Folder application path is authoritative for raw-image processing.
 Scripts named `run_yang_*` are evaluation tools and are not invoked by the GUI.
+
+## Image acquisition and preprocessing
+
+Images were acquired with a Canon EOS R5 camera fitted with a 50 mm EF lens at
+f/5.6, ISO 100, and 1/20 s exposure. Native `.cr3` camera files were converted
+to PNG before post-processing with NPEC Labeling Tool. The conversion software
+and conversion-specific color settings were not recorded in this repository.
 
 ## Processing sequence
 
@@ -126,13 +133,27 @@ This command does not perform raw RGB semantic inference.
 
 The dataset-specific workflow was developed for Yang Song of the DroughtFighters
 project, Plant Microbe Interaction group, Utrecht University. Images were
-processed with NPEC Labeling Tool release `2026.8.2.4` using the Lucifer RGB
-inoculated Arabidopsis five-seedling preset. Frames were grouped by
-plate and registered sequentially using the plant/top-root region. Visible root
-pixels were segmented by tiled RGB inference and decomposed into primary and
-lateral classes by crown-anchored skeleton topology. Per-seedling allocation
-used five temporally tracked crown lanes plus a constrained linear ranker to
-resolve ambiguous graph assignments; plate-total length remained independent
-of ownership. Root length was calculated from weighted 8-neighbor skeleton
-edges at `0.02663809523809524 mm/pixel`. Bacteria-occluded gaps were treated as
-unknown and were not automatically imputed by the default profile.
+acquired with a Canon EOS R5 and 50 mm EF lens at f/5.6, ISO 100, and 1/20 s,
+converted from `.cr3` to PNG, and processed with NPEC Labeling Tool release
+`2026.8.2.5` using the Lucifer RGB inoculated Arabidopsis five-seedling preset.
+Frames were grouped by plate and registered sequentially using the
+plant/top-root region. Visible root pixels were segmented by tiled RGB inference
+and decomposed into primary and lateral classes by crown-anchored skeleton
+topology. Per-seedling allocation used five temporally tracked crown lanes plus
+a constrained linear ranker to resolve ambiguous graph assignments; plate-total
+length remained independent of ownership. Root length was calculated from
+weighted 8-neighbor skeleton edges at `0.02663809523809524 mm/pixel`, and shoot
+area from segmented pixels using the squared pixel scale. Bacteria-occluded
+gaps were treated as unknown and were not automatically imputed by the default
+profile.
+
+## Concise article sentence
+
+Images were acquired with a Canon EOS R5 and 50 mm EF lens (f/5.6, ISO 100,
+1/20 s), converted from `.cr3` to PNG, and analyzed using the Yang Song Lucifer
+RGB five-seedling pipeline in NPEC Labeling Tool v2026.8.2.5 (Lube, 2026), which
+combined its bundled Lucifer RGB root, inoculated RGB shoot v3, and
+five-seedling owner-ranker models with temporal crown-lane tracking and
+quantified primary/lateral root length from weighted 8-neighbor skeleton edges
+at `0.0266381 mm/pixel` and shoot area from segmented pixels at the corresponding
+squared scale.

@@ -2,7 +2,7 @@
 param(
     [string]$PythonVersion = "3.11",
     [switch]$OneFile,
-    [string]$AppVersion = "2026.8.2.4",
+    [string]$AppVersion = "2026.8.2.5",
     [ValidateSet("none", "yang", "all")]
     [string]$ModelProfile = "none",
     [switch]$SkipTensorFlowCollection

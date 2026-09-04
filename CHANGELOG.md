@@ -1,5 +1,20 @@
 # Changelog
 
+## 2026.8.2.5 - 2026-09-04
+
+Documentation and provenance correction to release `2026.8.2.4`.
+
+- Recorded the supplied Yang Song workflow acquisition settings: Canon EOS R5,
+  50 mm EF lens, f/5.6, ISO 100, and 1/20 s exposure.
+- Recorded conversion of native `.cr3` images to PNG before post-processing;
+  unrecorded conversion software and color settings are not asserted.
+- Added public acknowledgement of Francisco Ribeiro Mansilha (BUas) for help
+  optimizing the computer-vision pipeline and model workflows.
+- Added concise Methods-ready language covering acquisition, models,
+  registration, class decomposition, ownership, and calibrated measurements.
+- No segmentation algorithm, model weight, measurement formula, validation
+  result, or scientific interpretation changed in this patch.
+
 ## 2026.8.2.4 - 2026-09-04
 
 Acknowledgement-only correction to release `2026.8.2.3`.

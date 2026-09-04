@@ -506,7 +506,7 @@ def build_pdf(output_pdf: Path = OUTPUT_PDF) -> Path:
                 styles["subtitle"],
             ),
             Paragraph(
-                "Designed and created by Vinicius Lube. Extensive application testing and feedback by Jason van Hamond. February 2026, Utrecht University.",
+                "Designed and created by Vinicius Lube at Utrecht University. Extensive application testing and feedback by Jason van Hamond. Pipeline and model optimization support by Francisco Ribeiro Mansilha (BUas). February 2026.",
                 styles["meta"],
             ),
             Paragraph(f"Manual build date: {today}", styles["meta"]),

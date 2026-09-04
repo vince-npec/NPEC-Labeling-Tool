@@ -53,9 +53,9 @@ software lineage. The authoritative frozen NPEC source is
 is reproduced in `licenses/PyPhenotyper-BSD-3-Clause.txt`.
 
 PyPhenotyper lineage credit belongs to Alican Noyan, Fedya (Fedor) Chursin,
-Francisco Ribeiro Mansilha, Wesley van Gaalen, Borislav Nachev, Vlad Matache,
-Valerian Meline, and Danna Shao. Detailed contribution statements are recorded
-in the upstream repository's `PROVENANCE.md`.
+Francisco Ribeiro Mansilha (BUas), Wesley van Gaalen, Borislav Nachev, Vlad
+Matache, Valerian Meline, and Danna Shao. Detailed contribution statements are
+recorded in the upstream repository's `PROVENANCE.md`.
 
 The exact Yang Song workflow root and shoot checkpoints documented by this
 repository do not match the already-public PyPhenotyper model files. Their
@@ -65,6 +65,6 @@ release therefore remains subject to the separate clearance described in
 ## Complete environment
 
 The exact package inventory used for the macOS ARM64 release candidate is in
-`environments/macos-arm64-2026.8.2.4.txt`.
+`environments/macos-arm64-2026.8.2.5.txt`.
 Its reproducible CycloneDX 1.6 software bill of materials is in
-`docs/sbom/macos-arm64-2026.8.2.4.cdx.json`.
+`docs/sbom/macos-arm64-2026.8.2.5.cdx.json`.

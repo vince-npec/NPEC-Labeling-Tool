@@ -6,7 +6,7 @@ grayscale images, Lucifer RGB images, dark-background RGB experiments, and
 single-plant potato endpoint images.
 
 This repository is the publication reproducibility snapshot for release
-`2026.8.2.4`, including the five-seedling Lucifer RGB pipeline used for the
+`2026.8.2.5`, including the five-seedling Lucifer RGB pipeline used for the
 Yang Song Arabidopsis analyses in the DroughtFighters project, Plant Microbe
 Interaction group, Utrecht University.
 
@@ -14,6 +14,11 @@ The historical technical token `yang` in filenames, paths, profile keys, and
 commands refers to Yang Song. Those identifiers remain unchanged for backward
 compatibility and checksum-level reproducibility; human-facing provenance uses
 her full name and project affiliation.
+
+For the documented Yang Song workflow, images were acquired with a Canon EOS R5
+and 50 mm EF lens at f/5.6, ISO 100, and 1/20 s, then converted from `.cr3` to
+PNG before post-processing. See [the pipeline record](docs/YANG_PIPELINE.md) for
+the complete measurement method and its limitations.
 
 ## Main capabilities
 
@@ -116,7 +121,7 @@ Public-release macOS builds use a no-FFmpeg OpenCV wheel; follow
 [`docs/BUILD_MACOS.md`](docs/BUILD_MACOS.md) rather than distributing a wheel
 that silently carries GPL video libraries.
 
-The `2026.8.2.4` macOS installer is an Apple Silicon build for macOS 14 or
+The `2026.8.2.5` macOS installer is an Apple Silicon build for macOS 14 or
 newer.
 
 Windows builds must run on Windows:
@@ -130,9 +135,9 @@ Both platform builders default to `none` for bundled model checkpoints. Pass
 the authorized Yang Song workflow release profile. Both builders verify all
 publication artifact hashes before packaging.
 
-Installers must be built from a tagged commit. Release `2026.8.2.4` uses the
+Installers must be built from a tagged commit. Release `2026.8.2.5` uses the
 frozen macOS ARM64 environment in
-[environments/macos-arm64-2026.8.2.4.txt](environments/macos-arm64-2026.8.2.4.txt).
+[environments/macos-arm64-2026.8.2.5.txt](environments/macos-arm64-2026.8.2.5.txt).
 
 ## Test
 
@@ -151,8 +156,9 @@ for analysis rather than the moving default branch.
 
 The project thanks **Jason van Hamond** for extensive testing and feedback that
 helped improve the NPEC Labeling Tool's reliability, usability, and release
-readiness. Contributor roles and research provenance are recorded in
-[AUTHORS.md](AUTHORS.md).
+readiness. The project also thanks **Francisco Ribeiro Mansilha (BUas)** for
+help optimizing the computer-vision pipeline and model workflows. Contributor
+roles and research provenance are recorded in [AUTHORS.md](AUTHORS.md).
 
 ## Contributing
 
