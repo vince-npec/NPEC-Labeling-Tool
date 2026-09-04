@@ -300,8 +300,8 @@ FOUNDATION_PROMPT_CLASSES: list[LabelClass] = [
 ]
 APP_TITLE = "NPEC Labeling Tool"
 APP_ABOUT_TEXT = (
-    "This application was designed and created by Vinicius Lube for the first NPEC intern student "
-    "Jason Hamond. February 2026. Utrecht University."
+    "Designed and created by Vinicius Lube. Extensive application testing and feedback by "
+    "Jason van Hamond. February 2026, Utrecht University."
 )
 
 

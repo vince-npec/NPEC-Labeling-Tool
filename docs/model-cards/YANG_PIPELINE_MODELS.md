@@ -4,7 +4,7 @@
 
 This card covers the three artifacts selected by the production preset
 `Arabidopsis - Lucifer RGB inoculated hybrid (5 seedlings)` in release
-`2026.8.2.3`.
+`2026.8.2.4`.
 
 The dataset and workflow provenance is Yang Song, DroughtFighters project,
 Plant Microbe Interaction group, Utrecht University. Stable `yang` identifiers

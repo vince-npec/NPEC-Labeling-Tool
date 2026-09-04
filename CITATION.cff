@@ -6,11 +6,11 @@ authors:
   - family-names: "Lube"
     given-names: "Vinicius"
     affiliation: "Utrecht University / Netherlands Plant Eco-phenotyping Centre (NPEC)"
-version: "2026.8.2.3"
+version: "2026.8.2.4"
 date-released: 2026-09-04
 license: "Apache-2.0"
 repository-code: "https://github.com/vince-npec/NPEC-Labeling-Tool"
-url: "https://github.com/vince-npec/NPEC-Labeling-Tool/releases/tag/v2026.8.2.3"
+url: "https://github.com/vince-npec/NPEC-Labeling-Tool/releases/tag/v2026.8.2.4"
 abstract: >-
   Desktop annotation, segmentation, time-series tracking, and phenotyping
   software for Hades and Lucifer plant imaging datasets, including a validated

@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026.8.2.4 - 2026-09-04
+
+Acknowledgement-only correction to release `2026.8.2.3`.
+
+- Corrected the in-application and user-guide testing credit to the full name
+  Jason van Hamond.
+- Added public acknowledgement of his extensive application testing and
+  feedback to the authorship record and README.
+- No segmentation algorithm, model weight, measurement formula, validation
+  result, or scientific interpretation changed in this patch.
+
 ## 2026.8.2.3 - 2026-09-04
 
 Provenance-only correction to release `2026.8.2.2`.

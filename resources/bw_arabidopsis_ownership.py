@@ -88,7 +88,7 @@ def _default_expected_centers(
         x0, y0, x1, y1 = dish_bbox
     dish_width = max(1, int(x1 - x0))
     dish_height = max(1, int(y1 - y0))
-    # Match the Hades/Jason-style five-lane layout while adapting to the actual
+    # Match the Hades five-lane layout while adapting to the actual
     # detected dish footprint.
     xs = np.linspace(x0 + (dish_width * 0.14), x0 + (dish_width * 0.86), max(1, int(plant_count)))
     cy = int(round(y0 + (dish_height * 0.18)))

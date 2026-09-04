@@ -57,9 +57,11 @@ def build_package(repo_root: Path, output: Path) -> Path:
 
     output.parent.mkdir(parents=True, exist_ok=True)
     readme = (
-        "NPEC Labeling Tool Yang Song model pack 2026.8.2.3\n\n"
+        "NPEC Labeling Tool Yang Song model pack 2026.8.2.4\n\n"
         "Provenance: Yang Song, DroughtFighters project, Plant Microbe "
         "Interaction group, Utrecht University.\n\n"
+        "Application testing acknowledgement: Jason van Hamond provided "
+        "extensive testing and feedback for NPEC Labeling Tool.\n\n"
         "These are the exact visible-root, inoculated-shoot, and five-seedling "
         "ownership artifacts documented in docs/YANG_PIPELINE.md.\n\n"
         "The artifacts are released under Apache-2.0 by the named rights "
@@ -79,6 +81,7 @@ def build_package(repo_root: Path, output: Path) -> Path:
             _write_reproducible(archive, f"models/{relative}", path.read_bytes())
         for relative in (
             "LICENSE",
+            "AUTHORS.md",
             "THIRD_PARTY_NOTICES.md",
             "docs/YANG_PIPELINE.md",
             "docs/model-cards/YANG_PIPELINE_MODELS.md",
@@ -109,7 +112,7 @@ def main() -> int:
     parser.add_argument(
         "--output",
         type=Path,
-        default=Path("dist/NPEC-Yang-Song-model-pack-2026.8.2.3.zip"),
+        default=Path("dist/NPEC-Yang-Song-model-pack-2026.8.2.4.zip"),
     )
     parser.add_argument(
         "--confirm-redistribution-rights",

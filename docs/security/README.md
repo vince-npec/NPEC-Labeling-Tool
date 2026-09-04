@@ -2,7 +2,8 @@
 
 `pip-audit-macos-arm64-2026.8.2.2.json` records the 2026-09-04 audit of the
 frozen macOS ARM64 development environment. Provenance-only release
-`2026.8.2.3` reuses that byte-identical dependency inventory and SBOM.
+`2026.8.2.3` and acknowledgement-only release `2026.8.2.4` reuse that
+byte-identical dependency inventory and SBOM.
 
 The audit reported one advisory: `PYSEC-2026-1805` / `CVE-2026-0994` affects
 `protobuf 4.25.9` when an application parses adversarial deeply nested

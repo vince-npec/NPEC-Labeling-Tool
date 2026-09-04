@@ -65,6 +65,6 @@ release therefore remains subject to the separate clearance described in
 ## Complete environment
 
 The exact package inventory used for the macOS ARM64 release candidate is in
-`environments/macos-arm64-2026.8.2.3.txt`.
+`environments/macos-arm64-2026.8.2.4.txt`.
 Its reproducible CycloneDX 1.6 software bill of materials is in
-`docs/sbom/macos-arm64-2026.8.2.3.cdx.json`.
+`docs/sbom/macos-arm64-2026.8.2.4.cdx.json`.

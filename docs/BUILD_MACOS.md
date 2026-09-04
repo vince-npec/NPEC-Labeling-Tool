@@ -1,6 +1,6 @@
 # Building the macOS Application
 
-Release `2026.8.2.3` targets Apple Silicon and requires macOS 14 or newer. The
+Release `2026.8.2.4` targets Apple Silicon and requires macOS 14 or newer. The
 minimum is recorded in the bundle as `LSMinimumSystemVersion`.
 
 ## Public release build
@@ -35,7 +35,7 @@ for controlled internal builds because the other model families require
 separate provenance review.
 
 The build installs the exact tested environment from
-`environments/macos-arm64-2026.8.2.3.txt`. Override `NPEC_REQUIREMENTS_FILE`
+`environments/macos-arm64-2026.8.2.4.txt`. Override `NPEC_REQUIREMENTS_FILE`
 only when intentionally qualifying a different dependency set.
 
 ## Internal GPL-aware build

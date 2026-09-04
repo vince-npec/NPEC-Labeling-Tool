@@ -18,5 +18,15 @@ This acknowledgement records research and dataset provenance. It does not
 change the software copyright statement or the distribution restrictions on
 private source images and hand annotations.
 
+## Testing and feedback
+
+- Jason van Hamond - extensive testing and feedback across NPEC Labeling Tool
+  workflows, helping improve application reliability, usability, and release
+  readiness.
+
+This acknowledgement recognizes testing and feedback contributions. It does
+not imply authorship or ownership of research datasets, model artifacts, or
+scientific results.
+
 Additional contributors should be added through Git history and acknowledged
 here when their contribution is released.

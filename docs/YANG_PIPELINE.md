@@ -9,7 +9,7 @@ profile keys is retained for compatibility and refers to Yang Song throughout.
 
 ## Release identity
 
-- Application release: `2026.8.2.3`
+- Application release: `2026.8.2.4`
 - Production interface: Lazy Folder in the Segmentation Pipeline tab
 - Preset: `Arabidopsis - Lucifer RGB inoculated hybrid (5 seedlings)`
 - Existing-mask ownership pipeline: `existing-mask-ownership-v20-visual-temporal-shoot-memory-schema-9`
@@ -126,7 +126,7 @@ This command does not perform raw RGB semantic inference.
 
 The dataset-specific workflow was developed for Yang Song of the DroughtFighters
 project, Plant Microbe Interaction group, Utrecht University. Images were
-processed with NPEC Labeling Tool release `2026.8.2.3` using the Lucifer RGB
+processed with NPEC Labeling Tool release `2026.8.2.4` using the Lucifer RGB
 inoculated Arabidopsis five-seedling preset. Frames were grouped by
 plate and registered sequentially using the plant/top-root region. Visible root
 pixels were segmented by tiled RGB inference and decomposed into primary and

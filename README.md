@@ -6,7 +6,7 @@ grayscale images, Lucifer RGB images, dark-background RGB experiments, and
 single-plant potato endpoint images.
 
 This repository is the publication reproducibility snapshot for release
-`2026.8.2.3`, including the five-seedling Lucifer RGB pipeline used for the
+`2026.8.2.4`, including the five-seedling Lucifer RGB pipeline used for the
 Yang Song Arabidopsis analyses in the DroughtFighters project, Plant Microbe
 Interaction group, Utrecht University.
 
@@ -116,7 +116,7 @@ Public-release macOS builds use a no-FFmpeg OpenCV wheel; follow
 [`docs/BUILD_MACOS.md`](docs/BUILD_MACOS.md) rather than distributing a wheel
 that silently carries GPL video libraries.
 
-The `2026.8.2.3` macOS installer is an Apple Silicon build for macOS 14 or
+The `2026.8.2.4` macOS installer is an Apple Silicon build for macOS 14 or
 newer.
 
 Windows builds must run on Windows:
@@ -130,9 +130,9 @@ Both platform builders default to `none` for bundled model checkpoints. Pass
 the authorized Yang Song workflow release profile. Both builders verify all
 publication artifact hashes before packaging.
 
-Installers must be built from a tagged commit. Release `2026.8.2.3` uses the
+Installers must be built from a tagged commit. Release `2026.8.2.4` uses the
 frozen macOS ARM64 environment in
-[environments/macos-arm64-2026.8.2.3.txt](environments/macos-arm64-2026.8.2.3.txt).
+[environments/macos-arm64-2026.8.2.4.txt](environments/macos-arm64-2026.8.2.4.txt).
 
 ## Test
 
@@ -146,6 +146,13 @@ QT_QPA_PLATFORM=offscreen pytest -q
 Use GitHub's **Cite this repository** control or the metadata in
 [CITATION.cff](CITATION.cff). For a paper, cite the tagged release actually used
 for analysis rather than the moving default branch.
+
+## Acknowledgements
+
+The project thanks **Jason van Hamond** for extensive testing and feedback that
+helped improve the NPEC Labeling Tool's reliability, usability, and release
+readiness. Contributor roles and research provenance are recorded in
+[AUTHORS.md](AUTHORS.md).
 
 ## Contributing
 

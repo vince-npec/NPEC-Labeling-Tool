@@ -2,10 +2,13 @@
 
 ## Snapshot origin
 
-Release `2026.8.2.3` is a provenance-only correction to the first public source
-snapshot, `2026.8.2.2`. It adds Yang Song's full person, project, group, and
-institutional attribution without changing algorithms, model weights,
-measurement formulas, or validation results.
+Release `2026.8.2.4` is an acknowledgement-only correction to provenance release
+`2026.8.2.3`. It records Jason van Hamond's extensive application testing and
+feedback, and corrects his full name in the application and user guide. Release
+`2026.8.2.3` added Yang Song's full person, project, group, and institutional
+attribution to the first public source snapshot, `2026.8.2.2`. Neither
+correction changes algorithms, model weights, measurement formulas, validation
+results, or scientific interpretation.
 
 The `2026.8.2.2` working copy did not contain prior Git metadata, so this
 repository begins with a curated source snapshot rather than an imported
@@ -36,6 +39,11 @@ The workflow and corpus provenance is Yang Song, DroughtFighters project, Plant
 Microbe Interaction group, Utrecht University. Historical `yang` identifiers in
 paths, filenames, corpus IDs, and command-line profiles are stable compatibility
 tokens that refer to this full attribution.
+
+Jason van Hamond contributed extensive application testing and feedback that
+helped improve reliability, usability, and release readiness. This testing
+acknowledgement does not imply authorship or ownership of research datasets,
+model artifacts, or scientific results.
 
 The bundled PyPhenotyper compatibility layer was reconciled against the public
 BSD-3-Clause NPEC lineage at `NPEC-NL/pyphenotyper` commit
